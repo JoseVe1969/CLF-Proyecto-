@@ -1,6 +1,6 @@
 import java.util.*;
 public class ClaseProyecto {
-    public static final int numDePreguntas = 10;
+    public static final int NUM_PREGUNTAS = 10;
     public static void preguntas(){
         Scanner consola = new Scanner(System.in);
         int porcentaje = 0; //Variable que inicia la calificacion del usuario.
@@ -186,7 +186,7 @@ public class ClaseProyecto {
         } 
               
         //Presentar resultados al usuario.
-        int resultados = (porcentaje * 100) / numDePreguntas;  
+        int resultados = (porcentaje * 100) / NUM_PREGUNTAS;  
         System.out.println("Has obtenido un " + resultados + "%.");
         if(resultados <= 59)
             System.out.println("No has podido pasar la prueba. Vuelve a intentar.");
